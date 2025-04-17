@@ -30,14 +30,18 @@ API повинен мати можливість виконувати насту
 + Підтримка зберігання дати народження контакту
 + Надання документів для API
 + Використання модуля перевірки достовірності даних Pydantic
+
 -----------------
-# Додаткова інформація
+
+## Додаткова інформація
+
 Запуск скрипта на сервері (перед цим запустити postgres БД)
 ```cmd
 uvicorn main:app --host localhost --port 8000 --reload
 ```
 
 ## Tests
+
     http://127.0.0.1:8000
     
     [Swagger документація](http://127.0.0.1:8000/docs)
@@ -48,10 +52,10 @@ uvicorn main:app --host localhost --port 8000 --reload
 
     http://127.0.0.1:8000/api/contacts/1
 
+    http://127.0.0.1:8000/api/contacts/100
+
     http://127.0.0.1:8000/api/contacts?email=gmail
     
-    http://127.0.0.1:8000/api/contacts/8
-
     http://127.0.0.1:8000/api/contacts/?first_name=Іван
     
     http://127.0.0.1:8000/api/contacts?email=gmail.com

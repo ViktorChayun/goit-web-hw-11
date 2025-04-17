@@ -1,0 +1,23 @@
+[project]
+name = "goit-web-home-work-11"
+version = "0.1.0"
+description = "Viktor's home work 11"
+authors = [
+    {name = "Your Name",email = "you@example.com"}
+]
+license = {text = "None"}
+readme = "README.md"
+requires-python = "=3.11.*"
+dependencies = [
+    "fastapi (>=0.115.12,<0.116.0)",
+    "uvicorn[standard] (>=0.34.1,<0.35.0)",
+    "sqlalchemy (>=2.0.40,<3.0.0)",
+    "psycopg2 (>=2.9.10,<3.0.0)",
+    "alembic (>=1.15.2,<2.0.0)",
+    "pydantic[email] (>=2.11.3,<3.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
